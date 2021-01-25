@@ -85,7 +85,7 @@ Alternatively, you can also compile the package using the [catkin command line t
 Running the cloth point cloud segmentation ROS package is very simple. First, you have to download the [YOLOv4 network weights](https://drive.google.com/file/d/1ua9XE0xd5pX8GwNdo98NDojhlTGP6-Dg/view?usp=sharing) and place it in the `cloth_segmentation/yolo_network_config/weights` folder. 
 
 ```
-cd ~/catkin_ws/src/cloth-point-cloud-segmentation/cloth_segmentation/yolo_network_config/weights
+cd ~/catkin_ws/src/cloth_point_cloud_segmentation/cloth_segmentation/yolo_network_config/weights
 
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1ua9XE0xd5pX8GwNdo98NDojhlTGP6-Dg' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1ua9XE0xd5pX8GwNdo98NDojhlTGP6-Dg" -O yolo_cloth.weights && rm -rf /tmp/cookies.txt
 ```
