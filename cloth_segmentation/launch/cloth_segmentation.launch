@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--Load parameters-->
+    <group ns="cloth_segmentation">
+        <rosparam file="$(find cloth_segmentation)/config/params.yaml" />
+    </group>
+
+    <!--Launch YOLOv4-->
+    <include file="$(find cloth_segmentation)/launch/yolov4.launch"/>
+
+    <!--Run cloth segmentation node-->
+    <node pkg="cloth_segmentation" type="cloth_segmentation" name="cloth_segmentation" output="screen" respawn="true"/>
+
+    <!--Run rviz with specified layout-->
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find cloth_segmentation)/rviz/layout.rviz" />
+    
+</launch>

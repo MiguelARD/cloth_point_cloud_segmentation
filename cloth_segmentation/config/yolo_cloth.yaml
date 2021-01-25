@@ -1,0 +1,11 @@
+yolo_model:
+
+  config_file:
+    name: yolo_cloth.cfg
+  weight_file:
+    name: yolo_cloth.weights
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - cloth

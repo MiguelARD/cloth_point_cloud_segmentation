@@ -1,0 +1,16 @@
+# Camera topics
+subscribers:
+
+  # Color image
+  rgb_reading:
+    topic: /camera/rgb/image_color
+
+  # Point cloud
+  point_cloud_reading: 
+    topic: /camera/depth_registered/points
+
+  # Raw image
+  camera_reading:
+    topic: /camera/rgb/image_raw
+
+
