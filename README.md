@@ -65,7 +65,7 @@ In order to install the cloth point cloud segmentation package, first clone the 
 
 ```
   cd ~/catkin_workspace/src
-  git clone --recurse-submodules https://github.com/cloth-point-cloud-segmentation.git
+  git clone --recurse-submodules https://github.com/MiguelARD/cloth_point_cloud_segmentation.git
   cd ..
 ```
 
